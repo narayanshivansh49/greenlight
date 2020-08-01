@@ -29,7 +29,7 @@
     <% end %>
 
     <title>Edulyx Live</title>
-    <meta property="og:title" content="<%= t("bigbluebutton", locale: :en) %>" />
+    <meta property="og:title" content="Edulyx Live" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content="Now seamlessly take live classes with Edulyx Live, it comes with everything you would need to conduct the classroom like scratchboard, uploading presentations, sharing Youtube videos, conducting polls, shared notes, advanced participation management etc." />
     <meta property="og:url" content="<%= request.base_url %>" />
@@ -56,6 +56,91 @@
       window.I18n = <%= current_translations.to_json.html_safe %>
       window.I18nFallback = <%= fallback_translations.to_json.html_safe %>
     </script>
+
+	<!-- Nikhil SEO -->
+	<meta
+ name="description"
+ content="Now seamlessly take live classes with Edulyx Live, it comes with everything you would need to conduct the classroom like scratchboard, uploading presentations, sharing Youtube videos, conducting polls, shared notes, advanced participation management etc."
+/>
+ 
+<meta
+ name="Keywords"
+ content="Edulyx ,Edulyx live, Teach Online, Online
+   classes,live classes, virtual classroom, shared notes, free online classes, Online class platform, best platform for online classes, video conferencing, video conference, online meetings, web meeting, video meeting, cloud meeting, cloud video, group video call, group video chat, screen share, application share,
+   mobility, mobile collaboration, desktop share, video collaboration, group
+   messaging "
+/>
+ 
+<script type="application/ld+json">
+ {
+   "@context": "https://schema.org",
+   "@type": "WebSite",
+   "url": "https://live.edulyx.com/",
+   "potentialAction": {
+     "@type": "SearchAction",
+     "target": "https://live.edulyx.com?s={search_term_string}",
+     "query-input": "required name=search_term_string"
+   }
+ }
+</script>
+<script type="application/ld+json">
+ {
+   "@context": "http://schema.org",
+   "@type": "WebSite",
+   "name": "Edulyx live",
+   "url": "https://live.edulyx.com/"
+ }
+</script>
+ 
+<script type="application/ld+json">
+ {
+   "@context": "http://schema.org",
+   "@type": "Corporation",
+   "name": "Edulyx live",
+   "url": "https://live.edulyx.com",
+   "logo": "https://i.ibb.co/qL896zt/Learn-science-the-scientific-way-1-1-1.png",
+   "description": "Now seamlessly take live classes with Edulyx Live, it comes with everything you would need to conduct the classroom like scratchboard, uploading presentations, sharing Youtube videos, conducting polls, shared notes, advanced participation management etc.",
+   "telephone": "+919522584955",
+   "address": {
+     "@type": "PostalAddress",
+     "addressCountry": "IN",
+     "addressLocality": "MG Road",
+     "addressRegion": "Karnataka",
+     "postalCode": "560025",
+     "streetAddress": " Gopala Krishna Complex, 45/3, Residency Road"
+   }
+ }
+</script>
+ 
+<script type="application/ld+json">
+ {
+   "@context": "http://schema.org",
+   "@type": "Organization",
+   "location": {
+     "@type": "Place",
+     "address": "Gopala Krishna Complex, 45/3, Residency Road, MG Road Bangalore, Karnataka, 560025"
+   },
+   "description": "Now seamlessly take live classes with Edulyx Live, it comes with everything you would need to conduct the classroom like scratchboard, uploading presentations, sharing Youtube videos, conducting polls, shared notes, advanced participation management etc.",
+   "name": "Edulyx live",
+   "email": "support@edulyx.com",
+   "logo": {
+     "@type": "ImageObject",
+     "url": "https://i.ibb.co/qL896zt/Learn-science-the-scientific-way-1-1-1.png",
+     "width": "320",
+     "height": "181"
+   },
+   "url": "https://live.edulyx.com",
+   "sameAs": [
+     "https://www.facebook.com/edulyx",
+     "https://twitter.com/Edulyx1",
+     "https://www.linkedin.com/company/edulyx",
+     "https://www.youtube.com/channel/UC3TpL3Q4Q1Rwi4MDsa8Z66g",
+     "https://www.instagram.com/edulyx"
+   ],
+   "founder": ["Abhishek Rajput"]
+ }
+</script>
+
   </head>
 
   <body class="app-background" data-controller="<%= params[:controller] %>" data-action="<%= params[:action] %>" data-relative-root="<%= Rails.configuration.relative_url_root || "/" %>">
